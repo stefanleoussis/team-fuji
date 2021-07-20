@@ -1,1 +1,1 @@
-web: node dist/package.json
+web: node app.js

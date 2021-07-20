@@ -84,5 +84,7 @@ process.on("unhandledRejection", (err, promise) => {
   // Close server & exit process
   server.close(() => process.exit(1));
 });
-
+app.get("/", (req, res) => {
+  res.send("Hello from Express!");
+});
 module.exports = { app, server };

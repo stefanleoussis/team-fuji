@@ -51,7 +51,7 @@ const ChatsTab = ({
       </Button>
       <ContactsDialog contacts={contacts} open={open} handleClose={handleClose} handleSubmit={handleSubmit} />
       <Grid id="scrollableDiv" className={classes.scrollerWrapper}>
-        <InfiniteScroll
+        {/* <InfiniteScroll
           className={classes.scroller}
           height={`60vh`}
           dataLength={conversations.length}
@@ -122,7 +122,7 @@ const ChatsTab = ({
               );
             })}
           </List>
-        </InfiniteScroll>
+        </InfiniteScroll> */}
       </Grid>
     </Grid>
   );
